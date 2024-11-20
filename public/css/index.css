@@ -1,0 +1,96 @@
+*{box-sizing: border-box;}
+img {vertical-align: middle;}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-shadow: 0 0 5px ;
+  background-color: aliceblue;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.slideshow-container {
+
+  max-width: 100%;
+  height: 43rem;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  object-fit: contain;
+  
+}
+
+.mySlides img {
+  width:100%;
+  height:43rem;
+  margin-top: -80px;
+  position:sticky;
+
+  
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3.0s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: fill;
+  width: 100%; 
+
+}
+
+
+header {
+  color: #ffffff;
+}
+
+
+h4 {
+  font-family: sans-serif;
+}
+
+.box:hover{
+  border-top-color: #e1a823 !important;
+  transform: scale(1.02);
+  transition: all 0.5s;
+}
+
+.ikon:hover {
+  transform: translateY(-10px);
+  transition: all 0.5s;
+}
+
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
+@media screen and (max-width: 575px) {
+
+}
