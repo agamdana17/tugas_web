@@ -11,9 +11,27 @@
   <link rel="stylesheet" href="css/Index.css">
   <style>
     
-    .swiper-slide img {
-      height: 40rem;
-      
+   
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide-2 img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   </style>
 <body>
@@ -23,44 +41,53 @@
   <!--article-->
   <article class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img/adv1.png" alt=""></div>
-      <div class="swiper-slide"><img src="img/adv2.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/adv1.png" alt="" style=" height: 40rem;"></div>
+      <div class="swiper-slide"><img src="img/adv2.png" alt="" style=" height: 40rem;"></div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
   </article>
   
   <!--section-->
   <section class="relative justify-center p-2 z-10 ">
-    <div class="column-1 md:column-4 auto-cols-max gap-10 -mt-20 h-1/2 kolom static p-3 border-gray-200 drop-shadow-2xl rounded-md font-semibold md:mx-72 md:p-6" style="background-color: #057791ee;">
-      <div class="p-2 rounded-lg border-b-4 border-black bg-zinc-200">
-        <img class="size-20 m-2 " src="img/time.png" alt="" >
-        <h4 class="text-center text-lg mt-3 tracking-wider " > TERKINI</h4>
+    <div class=" mx-0 md:columns-4 columns-2 -mt-20 h-1/2 kolom static p-2  border-gray-200 drop-shadow-2xl rounded-md font-semibold xl:mx-72 md:p-6" style="background-color: #057791ee;">
+      <div class="size-36 md:w-44 p-2 rounded-lg text-center border-b-4 border-black backdrop-blur-sm" style="background-color: #ffffffdc;">
+        <img class="size-20 m-auto ikon" src="img/time.png" alt="" >
+        <h4 class=" text-lg mt-3 tracking-widest " > TERKINI</h4>
       </div>
 
-      <div class="p-2 rounded-lg border-b-4 border-black bg-zinc-200">
-        <img class="size-20 m-2 " src="img/time.png" alt="" >
-        <h4 class="text-center text-lg mt-3 tracking-wider " > TERKINI</h4>
+      <div class="size-36 md:w-44 p-2 rounded-lg text-center border-b-4 border-black backdrop-blur-sm" style="background-color: #ffffffdc;">
+        <img class="size-20 m-auto ikon " src="img/rating.png" alt="" >
+        <h4 class=" text-lg mt-3 tracking-widest " > POPULER</h4>
       </div>
 
-      <div class="p-2 rounded-lg border-b-4 border-black bg-zinc-200">
-        <img class="size-20 m-2 " src="img/time.png" alt="" >
-        <h4 class="text-center text-lg mt-3 tracking-wider " > TERKINI</h4>
+      <div class="size-36 md:w-44 p-2 rounded-lg text-center border-b-4 border-black  backdrop-blur-sm" style="background-color: #ffffffdc;">
+        <img class="size-20 m-auto ikon " src="img/discount.png" alt="" >
+        <h4 class=" text-lg mt-3 "> MOBIL DISKON</h4>
       </div>
 
-      <div class="p-2 rounded-lg border-b-4 border-black bg-zinc-200">
-        <img class="size-20 m-2 " src="img/time.png" alt="" >
-        <h4 class="text-center text-lg mt-3 tracking-wider " > TERKINI</h4>
+      <div class="size-36 md:w-44 p-2 rounded-lg text-center border-b-4 border-black  backdrop-blur-sm" style="background-color: #ffffffdc;">
+        <img class="size-20 m-auto ikon" src="img/money.png" alt="" >
+        <h4 class=" text-lg mt-3 tracking-widest " > TERMURAH</h4>
       </div>
+
     </div>
   </section>
   
-
-  <!--Testimonials-->
-
   <!--Info-->
-
+  <div class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img class="h-10" src="img/merci.jpg" alt=""></div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 
 
 
@@ -197,11 +224,39 @@
         delay: 2500,
         disableOnInteraction: false,
       },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
   });
+
+  var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        "@1.50": {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+
 </script>
 
 <script>
@@ -239,4 +294,5 @@
         });
       });
   </script>
+
 </html>
