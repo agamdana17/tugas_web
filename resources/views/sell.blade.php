@@ -17,44 +17,85 @@
   <!--article-->
   <article class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img/adv1.png" alt=""></div>
-      <div class="swiper-slide"><img src="img/adv2.png" alt=""></div>
+      <div class="swiper-slide"><img src="img/adv1.png" alt="" style=" height: 40rem;"></div>
+      <div class="swiper-slide"><img src="img/adv2.png" alt="" style=" height: 40rem;"></div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
   </article>
+
   <!--section-->
-  <section class="relative justify-center p-2 z-10 ">
-    <div class="-mt-20 kolom static p-3 border-gray-200 drop-shadow-2xl rounded-md font-semibold md:mx-10 md:p-6" style="background-color: #057791ee;">
-      <div class="relative group">
-        <button id="dropdown-button" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
-          <span class="mr-2">Open Dropdown</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </button>
-        <div id="dropdown-menu" class="hidden absolute right-0 mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-1 space-y-1">
-          <!-- Search input -->
-          <input id="search-input" class="block w-full px-4 py-2 text-gray-800 border rounded-md  border-gray-300 focus:outline-none" type="text" placeholder="Search items" autocomplete="off">
-          <!-- Dropdown content goes here -->
-          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md">Uppercase</a>
-          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md">Lowercase</a>
-          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md">Camel Case</a>
-          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md">Kebab Case</a>
+ <section class="grid grid-cols-6 grid-rows-2 relative justify-center p-2 z-10 ">
+    <div class="cols-start-2 col-span-6 -mt-20 kolom static p-3 border-gray-200 drop-shadow-2xl rounded-md font-semibold md:mx-10 md:p-6" style="background-color: #057791ee;">
+      <h4 class="cols-span-1 mb-4 text-slate-100">SELL YOUR CAR</h4>
+
+      <form class=" w-full text-xs sm:text-base">
+        <div class="flex w-full ">
+          <label for="Merk" class="mb-2 font-medium text-gray-900 sr-only dark:text-white"> Merk</label>
+          <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-l-lg focus:ring-blue-500 focus:border-blue-500 block w-1/6 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option value="Merk">Merk</option>
+            <option value="Jatim">Jawa Timur</option>
+            <option value="Jabar">Jawa Barat</option>
+            <option value="Jateng">Jawa Tengah</option>
+            <option value="Jabodetabek">Jabodetabek</option>
+          </select>
+
+          <label for="Model" class="mb-2 font-medium text-gray-900 sr-only dark:text-white"></label>
+          <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-1/6 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Model</option>
+            <option value="Jatim">Jawa Timur</option>
+            <option value="Jabar">Jawa Barat</option>
+            <option value="Jateng">Jawa Tengah</option>
+            <option value="Jabodetabek">Jabodetabek</option>
+          </select>
+
+          <label for="Tahun" class="mb-2 font-medium text-gray-900 sr-only dark:text-white"></label>
+          <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-1/6 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Tahun</option>
+            <option value="Jatim">Jawa Timur</option>
+            <option value="Jabar">Jawa Barat</option>
+            <option value="Jateng">Jawa Tengah</option>
+            <option value="Jabodetabek">Jabodetabek</option>
+          </select>
+
+          <label for="Tahun" class="mb-2 font-medium text-gray-900 sr-only dark:text-white"></label>
+          <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block w-1/6 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Transmisi</option>
+            <option value="Jatim">Jawa Timur</option>
+            <option value="Jabar">Jawa Barat</option>
+            <option value="Jateng">Jawa Tengah</option>
+            <option value="Jabodetabek">Jabodetabek</option>
+          </select>
+
+          <label for="Vrian" class="mb-2 font-medium text-gray-900 sr-only dark:text-white"></label>
+          <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-1/6 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Varian</option>
+            <option value="Jatim">Jawa Timur</option>
+            <option value="Jabar">Jawa Barat</option>
+            <option value="Jateng">Jawa Tengah</option>
+            <option value="Jabodetabek">Jabodetabek</option>
+          </select>
+
+          <label for="Varian" class="mb-2 font-medium text-gray-900 sr-only dark:text-white"></label>
+          <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-r-lg focus:ring-blue-500 focus:border-blue-500 block w-1/6 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Kilometer</option>
+            <option value="Jatim">Jawa Timur</option>
+            <option value="Jabar">Jawa Barat</option>
+            <option value="Jateng">Jawa Tengah</option>
+            <option value="Jabodetabek">Jabodetabek</option>
+          </select>
+
+
+
+          
         </div>
-      </div>
+      </form>
 
     </div>
   </section>
+  
 
   <!--Testimonials-->
-
   <!--Info-->
-
-
-
-
   <!--Footer container-->
   <footer class="bg-gray-100">
     <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">

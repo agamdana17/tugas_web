@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/Index.css">
   <style>
     
-   
 
     .swiper {
       width: 100%;
@@ -47,30 +46,38 @@
     <div class="swiper-pagination"></div>
   </article>
   
+
+  
   <!--section-->
-  <section class="relative justify-center p-2 z-10 ">
-    <div class=" mx-0 md:columns-4 columns-2 -mt-20 h-1/2 kolom static p-2  border-gray-200 drop-shadow-2xl rounded-md font-semibold xl:mx-72 md:p-6" style="background-color: #057791ee;">
+  <section class="flex-1 grid grid-cols-6  relative gap-5  p-2 z-10 ">
+    <div class=" columns-1 md:grid md:grid-cols-4 md:col-start-2 md:col-span-4 mx-0 -mt-20 kolom p-2 border-gray-200 drop-shadow-2xl rounded-md font-semibold md:p-6" style="background-color: #057791ee;">
       <div class="size-36 md:w-44 p-2 rounded-lg text-center border-b-4 border-black backdrop-blur-sm" style="background-color: #ffffffdc;">
         <img class="size-20 m-auto ikon" src="img/time.png" alt="" >
         <h4 class=" text-lg mt-3 tracking-widest " > TERKINI</h4>
       </div>
-
       <div class="size-36 md:w-44 p-2 rounded-lg text-center border-b-4 border-black backdrop-blur-sm" style="background-color: #ffffffdc;">
         <img class="size-20 m-auto ikon " src="img/rating.png" alt="" >
         <h4 class=" text-lg mt-3 tracking-widest " > POPULER</h4>
       </div>
-
+    
       <div class="size-36 md:w-44 p-2 rounded-lg text-center border-b-4 border-black  backdrop-blur-sm" style="background-color: #ffffffdc;">
         <img class="size-20 m-auto ikon " src="img/discount.png" alt="" >
         <h4 class=" text-lg mt-3 "> MOBIL DISKON</h4>
       </div>
-
+    
       <div class="size-36 md:w-44 p-2 rounded-lg text-center border-b-4 border-black  backdrop-blur-sm" style="background-color: #ffffffdc;">
         <img class="size-20 m-auto ikon" src="img/money.png" alt="" >
         <h4 class=" text-lg mt-3 tracking-widest " > TERMURAH</h4>
       </div>
+      
+
+
+
+     
+    
 
     </div>
+    
   </section>
   
   <!--Info-->

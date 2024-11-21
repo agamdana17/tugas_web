@@ -22,7 +22,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div class="flex shrink-0 items-center">
-              <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="img/logo.png" class="h-8" />
                 <table class="w-52 font-semibold">
                   <th>
@@ -43,7 +43,7 @@
                 <a href="/" class="rounded-md px-3 py-2 hover:text-zinc-300" aria-current="page">HOME</a>
                 <a href="/buy" class="rounded-md px-3 py-2 hover:text-zinc-300">BUY</a>
                 <a href="/sell" class="rounded-md px-3 py-2 hover:text-zinc-300">SELL</a>
-                <a href="/about" class="rounded-md px-3 py-2 hover:text-zinc-300">ABOUT</a>
+                <a href="/contact_us" class="rounded-md px-3 py-2 hover:text-zinc-300">CONTACT US</a>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@
           <a href="/" class="block rounded-md px-3 py-2 " aria-current="page">HOME</a>
           <a href="/buy" class="block rounded-md px-3 py-2 ">BUY</a>
           <a href="/sell" class="block rounded-md px-3 py-2 ">SELL</a>
-          <a href="/about" class="block rounded-md px-3 py-2 ">ABOUT</a>
+          <a href="/contact_us" class="block rounded-md px-3 py-2 ">CONTACT US</a>
         </div>
       </div>
     </nav>
