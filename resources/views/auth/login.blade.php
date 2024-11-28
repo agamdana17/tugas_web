@@ -1,4 +1,4 @@
-@extends('layouts.welcome')
+@extends('welcome')
 @section('titile', 'Login')
 @section('content')
     <section class="bg-gray-50 dark:bg-gray-900">
@@ -80,7 +80,7 @@
                             In
                         </button>
                         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                            Don’t have an account yet? <a href="#"
+                            Don’t have an account yet? <a href="register"
                                 class="font-medium text-primary-600 hover:underline dark:text-primary-500">Register</a>
                         </p>
                     </form>

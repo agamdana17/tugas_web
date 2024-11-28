@@ -4,7 +4,16 @@ use App\Http\Controllers\AuthController;
 use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
 
-Route::view("/", "/layouts/welcome");
+#Route::view("/", "/layouts/welcome");
+Route::middleware("auth")->group(function(){
+    Route::view("/", "home")->name("hometo");
+});
+
+Route::middleware("auth")->group(function(){
+    Route::get('/login', [AuthController::class, 'login'])
+        ->name('login');
+});
+
 
 Route::get('/login', [AuthController::class, "login"])
     ->name("login");
@@ -18,10 +27,7 @@ Route::get("/register", [AuthController::class, "register"])
 Route::post('/register', [AuthController::class, "registerPost"])
     ->name("register.post");
 
-
-Route::get('/home', function () {
-    return view('home');
-});
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('/buy', function () {
     return view('buy');
